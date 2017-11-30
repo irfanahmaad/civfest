@@ -1,0 +1,171 @@
+.tentang-lomba, .formulir-tor, .timeline-lomba, .alur-lomba, .waktu {
+	position: relative;
+	padding: 30px 15px;
+}
+
+.alur-lomba {
+	margin-bottom: 50px;
+}
+
+.formulir-tor, .waktu {
+	background-color: #cfe9e6;
+	/*margin-bottom: 50px;*/
+}
+
+.timeline-lomba{
+	margin-bottom: 50px;
+}
+
+.beton-hero {
+	width: 100%;
+	overflow: hidden;
+	height: 400px;
+	background:url(../img/beton-hero.png) no-repeat;
+	background-position: right;
+	position: relative;
+	z-index: -3;
+	margin-top: 90px;
+	background-size: cover;
+}
+
+.formulir-tor .title-content, .alur-lomba .title-content, .timeline-lomba .title-content, .waktu .title-content {
+	margin-bottom: 10px;
+}
+
+.ornamen {
+	position: absolute;
+	top: 0;
+}
+
+.ornamen-right{
+	right: 0;
+}
+
+.ornamen-left {
+	left: -50px;
+}
+
+.acc {
+	width: 400px;
+	bottom: 0;
+	position: absolute;
+
+}
+
+.event-content {
+	margin-bottom: 50px;
+	line-height: 200%;
+}
+
+.content-accessories-right {
+	right: 32%;
+	top: 25px;
+	z-index: 0;
+}
+
+.swipe {
+	font-weight: bold;
+	text-align: center;
+	display: none;
+	color: #0a947b;
+}
+
+.tempat {
+	font-size: 24px;
+}
+
+/*Alur*/
+#alur-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.alur {
+  border-left: 4px solid #0a947b;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #fdff72;
+  color: #333;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 30px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+}
+
+.alur h3 {
+ 	letter-spacing: 1.5px;
+ 	font-weight: 100;
+ 	font-size: 1.4em;
+}
+.alur .event {
+  border-bottom: 1px dashed #0a947b;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.alur .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.alur .event:before,
+.alur .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.alur .event:before {
+  left: -217.5px;
+  color: #0a947b;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+.alur .event:after {
+  box-shadow: 0 0 0 4px #0a947b;
+  left: -38px;
+  background: #fdff72;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+/*-------*/
+
+@media(max-width: 768px) {
+	.alur {
+		margin: 0;
+		max-width: 100%;
+	}
+
+	.event-content {
+		line-height: 170%;
+	}
+
+	.swipe {
+		display: block;
+	}
+	.alur .event:before {
+		left: -45px;
+		top: -20px;
+	}
+	.waktu #ornamen {
+		width: 300px;
+		opacity: .3;
+	}
+	.formulir-tor #ornamen {
+		opacity: .3;
+	}
+	.event-content {
+		text-shadow: 1px 1px 1px white;
+	}
+}
