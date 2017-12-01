@@ -864,14 +864,18 @@ body {
 	font-size: 24px;
 }
 
+.sosmed a {
+	color: #333;
+}
+
 .sosmed i {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	padding: 0px 20px;
 	transition: .3s ease;
 }
 
 .sosmed i:hover {
-	color: #337ab7;
+	color: inherit;
 }
 
 @media(max-width: 768px){
