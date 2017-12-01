@@ -5,7 +5,7 @@
   <div class="container">
     <div class="col-xs-12">
       <div class="logo-event">
-        <img src="{{ asset('img/logo-event.png') }}">
+        <img src="{{ asset('img/Ultramen.jpg') }}">
         <h1>Ultramen</h1>
       </div>
     </div>
@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="main-breadcrumb col-xs-12">
-          <p><a href="{{ url('/') }}">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> <a href="{{ url('event') }}">Event</a> <i class="fa fa-angle-right" aria-hidden="true"></i>Ultramen</p>
+          <p><a href="{{ url('/') }}">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i>Ultramen</p>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
         <img src="{{ asset('img/acc/pineapples.png') }}" width="150px">
       </div>
       <div class="col-xs-12 title-content text-center">
-        <h2><b>Tentang</b> Seminar</h2>
+        <h2><b>Tentang</b> Ultramen</h2>
         <div class="line-height"></div>
       </div>
       <div class="col-xs-12">

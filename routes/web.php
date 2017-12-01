@@ -21,6 +21,10 @@ Route::get('all-news', 'MainController@news');
 
 Route::get('news/detail/{title_news}', 'MainController@newsDetail');
 
+Route::get('ultramen', function(){
+  return view('pages/ultramen');
+});
+
 Route::get('galeri/{type_galeri}', function($type_galeri){
   return view('pages/'.$type_galeri);
 });

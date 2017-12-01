@@ -49,7 +49,7 @@
 
             <p class="help-block" style="font-style: italic;color: red;">this images must 1 x 1</p>
 
-            <img src="{{ asset('img/event/'.$data[0]->images) }}" alt="manage-new-images" width="400px" />
+            <img src="{{ asset('img/event/'.$data[0]->images) }}" alt="manage-new-images" />
           </div>
           <div class="form-group">
             <textarea class="textarea" id="editor1" name="description" placeholder="Place some text here"

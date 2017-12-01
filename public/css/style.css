@@ -242,12 +242,22 @@ body {
 
 .logo-event {
 	text-align: center;
+	margin-top: 30px;
 }
 
 .logo-event img {
 	width: 200px;
 	box-sizing: border-box;
 	border-radius: 100%;
+}
+
+.description-detail-news {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.form-group img {
+	width: 400px;
 }
 
 .logo-event h1 {
@@ -303,6 +313,7 @@ body {
 	text-align: center;
 	padding: 10px 0px;
 	vertical-align: top;
+	margin: 20px 0px;
 }
 
 .list-content h2 {

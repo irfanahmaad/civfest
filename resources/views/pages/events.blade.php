@@ -37,7 +37,7 @@
         				<div class="col-xs-12">
         					<div class="event-content">
         						<p>
-                      {{ $events_data[0]->description }}
+                      {!! $events_data[0]->description !!}
                     </p>
         					</div>
         				</div>
@@ -92,7 +92,7 @@
         											<p><small class="text-muted"><i class="fa fa-calendar-o"></i> {{ date('d M Y', strtotime($data->updated_at)) }} </small></p>
         										</div>
         										<div class="timeline-body">
-        											<p>{{ $data->description }}</p>
+        											<p>{!! $data->description !!}</p>
         										</div>
         									</div>
         								</li>

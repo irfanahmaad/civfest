@@ -11,7 +11,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="main-breadcrumb col-xs-12">
-        <p><a href="#">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> News</p>
+        <p><a href="{{ url('/') }}">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> News</p>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
             <div class="news-item">
               <h2>{{ $data->title }}</h2>
               <p>
-                {{ $data->description }}
+                {!! substr($data->description, 0, 150) !!}
               </p>
             </div>
           </div>

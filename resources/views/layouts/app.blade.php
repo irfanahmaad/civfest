@@ -15,8 +15,9 @@
     <!-- data tables-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
     <!-- detepicker-->
-    <link rel="stylesheet" href="{{ asset('dist/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.min.css">
+    <!-- boostrap wysihtml5-->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap3-wysihtml5.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/_all-skins.min.css') }}">
@@ -115,6 +116,9 @@
     <!-- ckeditor-->
     <script src="{{ asset('dist/ckeditor/ckeditor.js')}}"></script>
     <script src="{{ asset('dist/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
+    <!--bootstrap wysihtml5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.all.min.js"></script>
+
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}"></script> -->
     <script src="{{ asset('js/adminlte.min.js')}}"></script>
@@ -123,11 +127,7 @@
     <!-- <script src="{{ asset('js/dashboard2.js')}}"></script> -->
     <script type="text/javascript">
     $(document).ready(function(){
-      // CKEDITOR.replace('editor1', {
-      //   entities_latin: false,
-      //   entities_greek: false
-      // });
-
+      $('.textarea').wysihtml5();
       $('#example1').DataTable({
         'paging'      : true,
         'lengthChange': false,

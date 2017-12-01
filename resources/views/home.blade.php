@@ -24,6 +24,22 @@
                     </div>
                   </a>
                   @endforeach
+                  @foreach ($seminars as $data)
+                  <a href="seminars/{!! strtolower(str_replace(' ', '-', $data->title)) !!}" class="test">
+                    <div class="list-content col-xs-12 col-md-6 col-lg-4">
+                      <img src="{{ asset('img/seminars/'.$data->images) }}" width="50%" align="center">
+                      <h2>{{ $data->title }}</h2>
+                      <div class="line-height-content"></div>
+                    </div>
+                  </a>
+                  @endforeach
+                  <a href="#">
+                    <div class="list-content col-xs-12 col-md-6 col-lg-4">
+                      <img src="{{ asset('img/Ultramen.jpg') }}" width="50%" align="center">
+                      <h2>Ultramen</h2>
+                      <div class="line-height-content"></div>
+                    </div>
+                  </a>
         				</div>
         			</div>
         		</div>
@@ -50,7 +66,7 @@
                       <div class="news-item">
                         <h2>{{ $data->title }}</h2>
                         <p>
-                          {{ $data->description }}
+                          {!! substr($data->description, 0, 150) !!}
                         </p>
                       </div>
                     </div>

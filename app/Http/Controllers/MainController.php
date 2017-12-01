@@ -17,7 +17,8 @@ class MainController extends Controller
     public function index(){
       $events = $this->repo->getDataEvent();
       $news = DB::table('news')->get();
-      return view('home', ['events' => $events, 'news' => $news]);
+      $seminars = $this->repo->getDataSeminars();
+      return view('home', ['events' => $events, 'news' => $news, 'seminars' => $seminars]);
     }
 
     public function event($eventName){

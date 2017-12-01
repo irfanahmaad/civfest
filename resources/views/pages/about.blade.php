@@ -5,7 +5,7 @@
   <div class="container">
     <div class="col-xs-12">
       <div class="logo-event">
-        <img src="{{ asset('img/logo-hero.png') }}" alt="logo-hero" width="450px">
+        <img src="{{ asset('img/logo-hero.png') }}" alt="logo-hero" style="width:450px;">
       </div>
     </div>
   </div>
@@ -33,15 +33,21 @@
         <div class="line-height"></div>
       </div>
       <div class="main-about col-xs-12 col-md-8 col-md-offset-2">
-        <p>Lomba merupakan wacana demokrasi dan keterbukaan yang dapat di pertanggung jawabkan,
-          terutama di bidang penciptaan ide dan kretifitas yang semakin maju dan modern.
-          Lomba juga merupakan wadah munculnya karya yang kreatif dengan mempertimbangkan unsur keselamatan,
-          keamanan dan kenyamanan. Salah satunya dengan perencanaan yang baik.</p>
-        <p>Untuk menggali bakat dan kemampuan , kami <b>Civil Engineering Festival 2018</b> akan mengadakan
-        lomba Desain K3L dengan tema <b><i>“Window of the World  for Civilian Future“</i></b>. Bangunan yang di 
-        maksud adalah tempat belajar yang dapat mengakses informasi secara online (online library)
-        yang di harapkan mampu memaksimalkan suatu lingkungan yang kosong untuk di jadikan suatu bangunan
-        yang aman dan nyaman. </p>
+        <p>MEA merupakan singkatan dari Masyarakat Ekonomi ASEAN yang memiliki pola mengintegrasikan ekonomi
+          ASEAN dengan membentuk sistem perdagangan bebas antara negara-negara anggota ASEAN. Sebagai salah
+          satu negara yang juga akan berpartisipasi dalam MEA, sudah seharusnya Indonesia memiliki
+          infrastruktur yang menunjang sejak dini. Dimulai dari pembangunan gedung, jalan, jembatan,
+          dan infrastruktur yang memadai agar Indonesia juga setara dengan negara Asia Tenggara lainnya.
+          Menyinggung hal tersebut, sudah seharusnya inovasi teknologi dikembangkan dalam bidang teknik
+          sipil agar status negara Indonesia yang sebelumnya hanya negara berkembang dapat
+          berubah menjadi negara maju.</p>
+        <p>Berkenaan dengan hal tersebut, Himpunan mahasiswa Teknik Sipil Politeknik Negeri Jakarta
+           ingin mewadahi ide-ide inovatif para sipil muda Indonesia untuk pembangunan insfrastruktur
+           yg lebih baik dalam acara tahunan yaitu "CIVIL ENGINEERING FESTIVAL (CIVFEST)" yang bertemakan
+           "Mengeksplorasi Talenta Wujudkan Aspirasi Inovatif (MENTAWAI)". Acara ini terdiri dari serangkaian
+           acara yaitu Lomba Beton Nasional, Lomba Konstruksi Jembatan, Lomba Maket, Lomba Desain,
+           Seminar Nasional mengenai dunia Teknik Sipil, serta kegiatan sosial yaitu Ultramen.
+           Dimana sebagian dari rangkaian acara tersebut merupakan kompetisi tingkat Nasional. </p>
       </div>
     </div>
   </div>
