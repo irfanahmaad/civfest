@@ -319,6 +319,7 @@ class ComposerStaticInit151898a900a126e544b363c6b76450d5
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\MainController' => __DIR__ . '/../..' . '/app/Http/Controllers/MainController.php',
         'App\\Http\\Controllers\\NewsController' => __DIR__ . '/../..' . '/app/Http/Controllers/NewsController.php',
+        'App\\Http\\Controllers\\GalleriesController' => __DIR__ . '/../..' . '/app/Http/Controllers/GalleriesController.php',
         'App\\Http\\Controllers\\RegistrationsController' => __DIR__ . '/../..' . '/app/Http/Controllers/RegistrationsController.php',
         'App\\Http\\Controllers\\SeminarsController' => __DIR__ . '/../..' . '/app/Http/Controllers/SeminarsController.php',
         'App\\Http\\Controllers\\SpeakersController' => __DIR__ . '/../..' . '/app/Http/Controllers/SpeakersController.php',

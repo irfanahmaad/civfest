@@ -205,9 +205,10 @@
         					</div>
         					<div class="col-xs-12">
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-map-marker"></i> Politeknik Negeri Jakarta
+        							<i class="fa fa-map-marker"></i>Lapangan Utama Politeknik Negeri Jakarta
         						</div>
-        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i> 2018</div>
+        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i>13-14 Maret 2018</div>
+                                <div class="text-center list-content tempat"><i class="fa fa-users"></i> Mahasiswa Perguruan Tinggi se-Indonesia</div>
         					</div>
         				</div>
         				<div class="col-md-6">
@@ -217,10 +218,10 @@
         					</div>
         					<div class="col-xs-12">
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        							<i class="fa fa-phone"></i> 0857-7746-5651 (Crisna Ditya Inzagi)
         						</div>
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        							<i class="fa fa-phone"></i> 0895-3744-42775 (Arini Septiana)
         						</div>
         					</div>
         				</div>
@@ -239,9 +240,10 @@
         					</div>
         					<div class="col-xs-12">
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-map-marker"></i> Politeknik Negeri Jakarta
+        							<i class="fa fa-map-marker"></i>Lapangan Utama Politeknik Negeri Jakarta
         						</div>
-        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i> 2018</div>
+        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i>13 Maret 2018</div>
+                                <div class="text-center list-content tempat"><i class="fa fa-users"></i> SMA/K sederajat</div>
         					</div>
         				</div>
         				<div class="col-md-6">
@@ -251,10 +253,10 @@
         					</div>
         					<div class="col-xs-12">
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        							<i class="fa fa-phone"></i> 0812-1314-8789 (Annisa Tristania)
         						</div>
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        							<i class="fa fa-phone"></i> 0896-5695-7696 (Dara Ilma Naafiaa)
         						</div>
         					</div>
         				</div>
@@ -274,9 +276,9 @@
         					</div>
         					<div class="col-xs-12">
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-map-marker"></i> Politeknik Negeri Jakarta
+        							<i class="fa fa-map-marker"></i>Gedung B Kelas 214-215, Politeknik Negeri Jakarta
         						</div>
-        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i> 2018</div>
+        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i>12 Maret 2018</div>
         					</div>
         				</div>
         				<div class="col-md-6">
@@ -286,10 +288,10 @@
         					</div>
         					<div class="col-xs-12">
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        							<i class="fa fa-phone"></i> 0857 2506 2063 (Affan Firdaus)
         						</div>
         						<div class="text-center list-content tempat">
-        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        							<i class="fa fa-phone"></i> 0856 9419 3280 (Razan Hanun)
         						</div>
         					</div>
         				</div>
