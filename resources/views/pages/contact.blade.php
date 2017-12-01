@@ -29,17 +29,19 @@
         <img src="{{ asset('img/acc/bird.png') }}" width="150px">
       </div>
       <div class="title-content col-xs-12 text-center">
-        <h2><span class="bold">Know more</span> about me</h2>
+        <h2><span class="bold">Contact</span> us!</h2>
         <div class="line-height"></div>
       </div>
       <div class="main-about col-xs-12 col-md-8 col-md-offset-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-        <p>
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Project Officer: 082233211852 (Ilham Bachrie)<br>
+        Humas: 085771992542 (Sandra Pratiwi)<br>
+        civilfestival2018@gmail.com</p>
+
+        <p>Sekretariat Himpunan Mahasiswa Sipil<br>
+        Jurusan Teknik Sipil<br>
+        Lantai 1 Gedung B Teknik Sipil<br>
+        Politeknik Negeri Jakarta<br>
+        Jl. Prof. Dr. G.A Siwabessy, Kampus Baru UI Depok 16424</p>
       </div>
     </div>
   </div>

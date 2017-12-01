@@ -77,6 +77,14 @@
   <footer class="foot-container">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-xs-12 text-center">
+            <h3><b>Follow</b> us</h3>
+            <div class="sosmed">
+              <a href="https://line.me/R/ti/p/%40mvq5134k"><i><img src="{{ asset('img/line.png') }}"></i></a>
+              <a href="https://www.instagram.com/civfest2018/"><i class="fa fa-instagram"></i></a>
+              <a href="https://twitter.com/Civfest2018"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
           <div class="foot-bottom-sections">
             <p>2018 &copy; Copyrights Civfest</p>
           </div>

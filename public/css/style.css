@@ -660,6 +660,11 @@ body {
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   transition: 0.2s ease;
+  height: 200px;
+}
+.timeline-panel .text-muted {
+	color: #0a947b;
+	font-weight: bolder;
 }
 .timeline .timeline-item .timeline-panel:hover {
   transform: translateY(-10px);
@@ -853,6 +858,20 @@ body {
 	padding: 15px;
 	outline: none;
 	margin-right: 5px;
+}
+
+.sosmed {
+	font-size: 24px;
+}
+
+.sosmed i {
+	margin-bottom: 30px;
+	padding: 0px 20px;
+	transition: .3s ease;
+}
+
+.sosmed i:hover {
+	color: #337ab7;
 }
 
 @media(max-width: 768px){

@@ -73,6 +73,20 @@
         			</div>
         		</div>
         	</section>
+
+            <section class="sponsor">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="set-accessories content-accessories-right">
+                            <img src="img/acc/bird.png">
+                        </div>
+                        <div class="title-content col-xs-12 text-center">
+                            <h2><span class="bold">Our</span> Media Partner</h2>
+                            <div class="line-height"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 @endsection
     <!-- <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
