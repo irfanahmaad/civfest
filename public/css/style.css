@@ -244,6 +244,12 @@ body {
 	text-align: center;
 }
 
+.logo-event img {
+	width: 200px;
+	box-sizing: border-box;
+	border-radius: 100%;
+}
+
 .logo-event h1 {
 	color: #0a947b;
 }
@@ -290,6 +296,7 @@ body {
 
 .list-content img {
 	transition: all 0.4s;
+	border-radius: 100%;
 }
 
 .list-content {

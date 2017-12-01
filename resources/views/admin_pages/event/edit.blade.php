@@ -20,7 +20,7 @@
       <div class="col-xs-12">
         @if(Session::has('status'))
         <div class="alert alert-success">
-          <strong>Success!</strong> {{ Session::get('status') }}
+          <strong>Success!</strong> {{ Session::get('status') }} <a href="{{ url('events/'.$data[0]->id.'/edit') }}">back to table</a>
         </div>
         @endif
       <form role="form" class="form" method="post" action="{{ url('events/'.$data[0]->id) }}" enctype="multipart/form-data">
@@ -49,7 +49,7 @@
 
             <p class="help-block" style="font-style: italic;color: red;">this images must 1 x 1</p>
 
-            <img src="{{ asset('img/news/'.$data[0]->images) }}" alt="manage-new-images" />
+            <img src="{{ asset('img/event/'.$data[0]->images) }}" alt="manage-new-images" width="400px" />
           </div>
           <div class="form-group">
             <textarea class="textarea" id="editor1" name="description" placeholder="Place some text here"

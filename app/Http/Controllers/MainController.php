@@ -39,6 +39,12 @@ class MainController extends Controller
       return view('pages/news', ['news' => $news]);
     }
 
+    public function newsDetail($parameter){
+      $parameter = strtolower(str_replace('-', ' ', $parameter));
+      $newsDetail = DB::table('news')->where('title', $parameter)->get();
+      return view('pages/detail-news', ['news' => $newsDetail, 'title-url' => $parameter]);
+    }
+
     public function seminar($seminarName){
       $seminars = $this->repo->getDataSeminarWithUriParameter(strtoupper(str_replace('-', ' ', $seminarName)));
       if($seminars->isEmpty()){

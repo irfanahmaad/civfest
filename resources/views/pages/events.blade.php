@@ -5,7 +5,7 @@
           <div class="container">
             <div class="col-xs-12">
               <div class="logo-event">
-                <img src="{{ asset('img/logo-event.png') }}">
+                <img src="{{ asset('img/event/'.$events_data[0]->images) }}">
                 <h1>
                   {{ $events_data[0]->title }}
                 </h1>

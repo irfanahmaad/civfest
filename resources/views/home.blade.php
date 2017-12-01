@@ -41,7 +41,7 @@
         				</div>
         				<div class="col-xs-12">
                   @foreach ($news as $data)
-                  <a href="#">
+                  <a href="news/detail/{!! strtolower(str_replace(' ', '-', $data->title)) !!}">
                     <div class="news-container col-xs-12 col-md-6">
                       <figure class="news-image">
                         <img src="img/news/{{ $data->images }}" alt="news content">
@@ -60,33 +60,6 @@
         			</div>
         		</div>
         	</section>
-        	<section class="sponsor">
-        		<div class="container-fluid">
-        			<div class="row">
-        				<div class="set-accessories content-accessories-right">
-        					<img src="img/acc/bird.png">
-        				</div>
-        				<div class="title-content col-xs-12 text-center">
-        					<h2><span class="bold">Our</span> Sponsor</h2>
-        					<div class="line-height"></div>
-        				</div>
-        			</div>
-        		</div>
-        	</section>
-
-            <section class="sponsor">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="set-accessories content-accessories-right">
-                            <img src="img/acc/bird.png">
-                        </div>
-                        <div class="title-content col-xs-12 text-center">
-                            <h2><span class="bold">Our</span> Media Partner</h2>
-                            <div class="line-height"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 @endsection
     <!-- <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
