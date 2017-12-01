@@ -3,8 +3,8 @@
 @section('content')
 <section class="news-hero" style="background:url({{ asset('img/pages-hero.png') }}) no-repeat;">
   <div class="logo-event">
-    <img src="{{ asset('img/logo-event.png') }}" alt="logo-heros">
-    <h1>Get more knowledge here</h1>
+    <!-- <img src="{{ asset('img/logo-event.png') }}" alt="logo-heros"> -->
+    <h1 class="judul-hero">Get more info here</h1>
   </div>
 </section>
 <section class="breadcrumb-style">

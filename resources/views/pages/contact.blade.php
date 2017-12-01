@@ -5,8 +5,8 @@
   <div class="container">
     <div class="col-xs-12">
       <div class="logo-event">
-        <img src="{{ asset('img/logo-event.png') }}">
-        <h1>Need more info?</h1>
+        <!-- <img src="{{ asset('img/logo-event.png') }}"> -->
+        <h1 class="judul-hero">Need more info?</h1>
       </div>
     </div>
   </div>

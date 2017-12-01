@@ -896,6 +896,10 @@ body {
 	color: inherit;
 }
 
+.judul-hero {
+	margin-top: 150px;
+}
+
 @media(max-width: 768px){
 	.burger:hover .menu{
 		display: none;
