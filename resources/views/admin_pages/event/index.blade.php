@@ -20,7 +20,7 @@
       <div class="col-xs-12">
         @if(Session::has('status'))
         <div class="alert alert-success">
-          <strong>Success!</strong> {{ Session::get('status') }}
+          <strong>Success!</strong> {{ Session::get('status') }} <a href="{{ url('events') }}">back to table</a>
         </div>
         @endif
         <!-- small box -->

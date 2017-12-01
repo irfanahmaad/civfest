@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="main-breadcrumb col-xs-12">
-        <p><a href="#">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> about</p>
+        <p><a href="{{ url('/') }}">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> about</p>
       </div>
     </div>
   </div>
@@ -33,13 +33,15 @@
         <div class="line-height"></div>
       </div>
       <div class="main-about col-xs-12 col-md-8 col-md-offset-2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-        <p>
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lomba merupakan wacana demokrasi dan keterbukaan yang dapat di pertanggung jawabkan,
+          terutama di bidang penciptaan ide dan kretifitas yang semakin maju dan modern.
+          Lomba juga merupakan wadah munculnya karya yang kreatif dengan mempertimbangkan unsur keselamatan,
+          keamanan dan kenyamanan. Salah satunya dengan perencanaan yang baik.</p>
+        <p>Untuk menggali bakat dan kemampuan , kami <b>Civil Engineering Festival 2018</b> akan mengadakan
+        lomba Desain K3L dengan tema <b><i>“Window of the World  for Civilian Future“</i></b>. Bangunan yang di 
+        maksud adalah tempat belajar yang dapat mengakses informasi secara online (online library)
+        yang di harapkan mampu memaksimalkan suatu lingkungan yang kosong untuk di jadikan suatu bangunan
+        yang aman dan nyaman. </p>
       </div>
     </div>
   </div>

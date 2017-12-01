@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.0.0-6/css/ionicons.min.css">
     <!-- data tables-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <!-- detepicker-->
+    <link rel="stylesheet" href="{{ asset('dist/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
 
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/AdminLTE.min.css') }}">
@@ -112,6 +114,7 @@
     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <!-- ckeditor-->
     <script src="{{ asset('dist/ckeditor/ckeditor.js')}}"></script>
+    <script src="{{ asset('dist/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}"></script> -->
     <script src="{{ asset('js/adminlte.min.js')}}"></script>
@@ -132,7 +135,11 @@
         'ordering'    : false,
         'info'        : true,
         'autoWidth'   : true
-      })
+      });
+
+      $('#datepicker').datepicker({
+        autoclose: true
+      });
     });
     </script>
 </body>

@@ -33,6 +33,17 @@
             <input type="text" name="title" value="{{ $data[0]->title }}" class="form-control" id="title" placeholder="Enter title" required>
           </div>
           <div class="form-group">
+            <label>Timeline:</label>
+
+            <div class="input-group date">
+              <div class="input-group-addon">
+                <i class="fa fa-calendar"></i>
+              </div>
+              <input type="text" name="updated_at" class="form-control pull-right" id="datepicker" value="{{ $data[0]->updated_at }}">
+            </div>
+            <!-- /.input group -->
+          </div>
+          <div class="form-group">
             <textarea class="textarea" id="editor1" name="description" placeholder="Place some text here"
                       style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required>{{ $data[0]->description }}</textarea>
           </div>

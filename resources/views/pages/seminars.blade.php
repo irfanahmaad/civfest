@@ -5,7 +5,7 @@
   <div class="container">
     <div class="col-xs-12">
       <div class="logo-event">
-        <img src="{{ asset($seminars[0]->images) }}">
+        <img src="{{ asset('img/speaker/'.$seminars[0]->images) }}">
         <h1>{{ $seminars[0]->title }}</h1>
       </div>
     </div>
@@ -98,7 +98,26 @@
         <div class="line-height"></div>
       </div>
       <div class="col-xs-12 regis-text">
-        
+        <div class="row text-center">
+    			<div class="col-md-4">
+    				<div class="icon-register fa fa-pencil"></div>
+    				<div>
+    					<a href="{{ url('order') }}" class="tombol tombol-success">REGISTER</a>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="icon-register fa fa-upload"></div>
+    				<div>
+    					<a href="{{ url('order/upload-bukti-pembayaran') }}" class="tombol tombol-primary">UPLOAD BUKTI</a>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="icon-register fa fa-search"></div>
+    				<div>
+    					<a href="{{ url('order/cek-status') }}" class="tombol tombol-danger">CEK STATUS</a>
+    				</div>
+    			</div>
+    		</div>
       </div>
     </div>
   </div>

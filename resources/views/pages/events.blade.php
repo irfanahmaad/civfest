@@ -55,8 +55,7 @@
         				</div>
         				<div class="col-xs-12">
         					<div class="event-content">
-        						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        						tempor incididunt ut labore et dolore magna <a href="{{ $events_data[0]->link_register}}">aliqua.</a>
+                    Petunjuk format makalah disini dan form pendaftaran <a href="{{ $events_data[0]->link_register}}">disini</a>
         					</div>
         				</div>
 
@@ -66,8 +65,7 @@
         				</div>
         				<div class="col-xs-12">
         					<div class="event-content">
-        						Excepteur sint occaecat cupidatat non
-        						proident, sunt in culpa qui officia deserunt mollit anim id est laborum <a href="{{ $events_data[0]->link_tor }}">lanoris.</a>
+        						Untuk informasi lebih lanjut bisa download TOR <a href="{{ $events_data[0]->link_tor }}">disini.</a>
         					</div>
         				</div>
         			</div>
@@ -85,7 +83,7 @@
         					<div class="col-xs-12">
         						<div class="timeline-container">
         							<ul class="timeline timeline-horizontal">
-                        @foreach ($events_data as $data)
+                        @foreach ($timelines as $data)
                         <li class="timeline-item">
         									<div class="timeline-badge primary"><i class="fa fa-calendar"></i></div>
         									<div class="timeline-panel">
@@ -120,28 +118,39 @@
         				<div class="col-xs-12">
         					<div class="event-content">
         						 <div id="alur-content">
-        						 	<ul class="alur">
-        						 		<li class="event" data-date="11 Nov 2017">
-        						 			<h3>Lorem Ipsum</h3>
-        						 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        												tempor incididunt ut labore et dolore magna</p>
-        						 		</li>
-        						 		<li class="event" data-date="11 Nov 2017">
-        						 			<h3>Lorem Ipsum</h3>
-        						 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        												tempor incididunt ut labore et dolore magna</p>
-        						 		</li>
-        						 		<li class="event" data-date="11 Nov 2017">
-        						 			<h3>Lorem Ipsum</h3>
-        						 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        												tempor incididunt ut labore et dolore magna</p>
-        						 		</li>
-        						 		<li class="event" data-date="11 Nov 2017">
-        						 			<h3>Lorem Ipsum</h3>
-        						 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        												tempor incididunt ut labore et dolore magna</p>
-        						 		</li>
-        						 	</ul>
+                      @if (Request::segment(2) == 'lomba-beton-nasional')
+                      <ul class="alur">
+                        <li class="event" data-date="11 Nov 2017">
+                          <h3>Lomba Beton Nasional</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna</p>
+                        </li>
+                      </ul>
+                      @elseif (Request::segment(2) == 'lomba-konstruksi-jembatan')
+                      <ul class="alur">
+                        <li class="event" data-date="11 Nov 2017">
+                          <h3>Lomba Konstruksi Jembatan</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna</p>
+                        </li>
+                      </ul>
+                      @elseif (Request::segment(2) == 'lomba-maket-gedung')
+                      <ul class="alur">
+                        <li class="event" data-date="11 Nov 2017">
+                          <h3>Lomba Maket Gedung</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna</p>
+                        </li>
+                      </ul>
+                      @else
+                      <ul class="alur">
+                        <li class="event" data-date="11 Nov 2017">
+                          <h3>Lomba Desain K3L</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna</p>
+                        </li>
+                      </ul>
+                      @endif
         						 </div>
         					</div>
         				</div>
@@ -149,8 +158,44 @@
         		</div>
         	</section>
 
-        	<section class="waktu">
-        		<img id="ornamen" class="ornamen-left acc" src="{{ asset('img/acc/accessories-2.png') }}" >
+          @if (Request::segment(2) == 'lomba-beton-nasional')
+          <section class="waktu">
+        		<img id="ornamen" class="ornamen-left acc opacity-5" src="{{ asset('img/acc/accessories-2.png') }}" >
+        		<div class="container">
+        			<div class="row">
+        				<div class="col-md-6">
+        					<div class="col-xs-12 title-content text-center">
+        						<h2><b>Waktu</b> dan Tempat</h2>
+        						<div class="line-height"></div>
+        					</div>
+        					<div class="col-xs-12">
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-map-marker"></i> Teknik Sipil - Politeknik Negeri Jakarta
+        						</div>
+        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i> 13 - 14 Maret 2018</div>
+                    <div class="text-center list-content tempat"><i class="fa fa-users"></i> Mahasiswa Teknik Sipil Se-Indonesia</div>
+        					</div>
+        				</div>
+        				<div class="col-md-6">
+        					<div class="col-xs-12 title-content text-center">
+        						<h2><b>Contact</b> Person</h2>
+        						<div class="line-height"></div>
+        					</div>
+        					<div class="col-xs-12">
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-phone"></i> 081267826717 (Muhammad Galib)
+        						</div>
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-phone"></i> 085779997729 (Yega Mardiansyah)
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</section>
+          @elseif (Request::segment(2) == 'lomba-konstruksi-jembatan')
+          <section class="waktu">
+        		<img id="ornamen" class="ornamen-left acc opacity-5" src="{{ asset('img/acc/accessories-2.png') }}" >
         		<div class="container">
         			<div class="row">
         				<div class="col-md-6">
@@ -182,18 +227,74 @@
         			</div>
         		</div>
         	</section>
-
-          <section class="sponsor">
-        		<div class="container-fluid">
+          @elseif (Request::segment(2) == 'lomba-maket-gedung')
+          <section class="waktu">
+        		<img id="ornamen" class="ornamen-left acc opacity-5" src="{{ asset('img/acc/accessories-2.png') }}" >
+        		<div class="container">
         			<div class="row">
-        				<div class="set-accessories content-accessories-right">
-        					<img src="img/acc/bird.png">
+        				<div class="col-md-6">
+        					<div class="col-xs-12 title-content text-center">
+        						<h2><b>Waktu</b> dan Tempat</h2>
+        						<div class="line-height"></div>
+        					</div>
+        					<div class="col-xs-12">
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-map-marker"></i> Politeknik Negeri Jakarta
+        						</div>
+        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i> 2018</div>
+        					</div>
         				</div>
-        				<div class="title-content col-xs-12 text-center">
-        					<h2><span class="bold">Our</span> Sponsor</h2>
-        					<div class="line-height"></div>
+        				<div class="col-md-6">
+        					<div class="col-xs-12 title-content text-center">
+        						<h2><b>Contact</b> Person</h2>
+        						<div class="line-height"></div>
+        					</div>
+        					<div class="col-xs-12">
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        						</div>
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        						</div>
+        					</div>
         				</div>
         			</div>
         		</div>
         	</section>
+          @else
+
+          <section class="waktu">
+        		<img id="ornamen" class="ornamen-left acc opacity-5" src="{{ asset('img/acc/accessories-2.png') }}" >
+        		<div class="container">
+        			<div class="row">
+        				<div class="col-md-6">
+        					<div class="col-xs-12 title-content text-center">
+        						<h2><b>Waktu</b> dan Tempat</h2>
+        						<div class="line-height"></div>
+        					</div>
+        					<div class="col-xs-12">
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-map-marker"></i> Politeknik Negeri Jakarta
+        						</div>
+        						<div class="text-center list-content tempat"><i class="fa fa-calendar"></i> 2018</div>
+        					</div>
+        				</div>
+        				<div class="col-md-6">
+        					<div class="col-xs-12 title-content text-center">
+        						<h2><b>Contact</b> Person</h2>
+        						<div class="line-height"></div>
+        					</div>
+        					<div class="col-xs-12">
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        						</div>
+        						<div class="text-center list-content tempat">
+        							<i class="fa fa-phone"></i> 08xx xxxx xxxx (Anonim)
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</section>
+          @endif
 @endsection

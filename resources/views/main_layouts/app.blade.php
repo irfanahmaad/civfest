@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{{ asset('dist/lightbox/simplelightbox.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap3-wysihtml5.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('fileinput.css') }}">
         <!-- Styles -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
         <link rel="icon" href="{{ asset('img/favicon.ico') }}">
@@ -57,10 +58,10 @@
             <li><a href="{{ url('event/lomba-maket-gedung') }}">Lomba Maket Gedung</a></li>
             <li><a href="{{ url('event/lomba-desain-k3l') }}">Lomba Desain K3L</a></li>
             <li><a href="{{ url('seminar/seminar-nasional') }}">Seminar Nasional</a></li>
-            <li><a href="{{ url('seminar/ultramen') }}">Ultramen</a></li>
+            <li><a href="#">Ultramen</a></li>
           </ul>
         </li>
-        <li><a href="{{ url('news') }}">News</a></li>
+        <li><a href="{{ url('all-news') }}">News</a></li>
         <li><a href="{{ url('about-us') }}">About Us</a></li>
         <li class="dropdown-nav"><a>Galeri <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
           <ul>
@@ -87,5 +88,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script src="{{ asset('js/bootstrap3-wysihtml5.all.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('dist/lightbox/simple-lightbox.min.js') }}"></script>
+<script src="{{ asset('js/fileinput.js') }}"></script>
 <script src="{{ asset('js/core.js') }}"></script>
 </html>

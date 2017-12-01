@@ -31,7 +31,7 @@
             <input type="text" name="title" class="form-control" id="title" placeholder="Enter title" required>
           </div>
           <div class="form-group">
-            <label for="tubtitle">Title post</label>
+            <label for="tubtitle">Subtitle post</label>
             <input type="text" name="subtitle" class="form-control" id="subtitle" placeholder="Enter subtitle" required>
           </div>
           <div class="form-group">

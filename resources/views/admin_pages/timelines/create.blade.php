@@ -31,6 +31,17 @@
             <input type="text" name="title" class="form-control" id="title" placeholder="Enter title" required>
           </div>
           <div class="form-group">
+            <label>Timeline:</label>
+
+            <div class="input-group date">
+              <div class="input-group-addon">
+                <i class="fa fa-calendar"></i>
+              </div>
+              <input type="text" name="updated_at" class="form-control pull-right" id="datepicker">
+            </div>
+            <!-- /.input group -->
+          </div>
+          <div class="form-group">
             <label for="description">Description</label>
             <textarea class="textarea" name="description" placeholder="Place some text here"
                       style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required></textarea>

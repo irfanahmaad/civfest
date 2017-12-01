@@ -56,14 +56,15 @@ class TimelinesController extends Controller
      */
     public function store(Request $request, $id)
     {
+
+      $request->updated_at = date('Y-m-d', strtotime($request->updated_at));
       $data = [
         "title" => $request->title,
         "description" => $request->description,
         "event_id" => $id,
         "created_at" => Carbon::now()->toDateTimeString(),
-        "updated_at" => Carbon::now()->toDateTimeString()
+        "updated_at" => $request->updated_at
       ];
-
       DB::table('timelines')->insert($data);
       $request->session()->flash('status', 'Task was successful!');
       return redirect('events/'.$id.'/timelines/create');
@@ -107,11 +108,13 @@ class TimelinesController extends Controller
      */
     public function update(Request $request, $idEventParameter, $idTimelineParameter)
     {
+      $request->updated_at = date('Y-m-d', strtotime($request->updated_at));
       $data = [
         "title" => $request->title,
         "description" => $request->description,
+        "event_id" => $idEventParameter,
         "created_at" => Carbon::now()->toDateTimeString(),
-        "updated_at" => Carbon::now()->toDateTimeString()
+        "updated_at" => $request->updated_at
       ];
 
       $request->session()->flash('status', 'Task was successful!');

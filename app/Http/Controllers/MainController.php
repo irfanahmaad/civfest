@@ -29,16 +29,14 @@ class MainController extends Controller
         if($timelines->isEmpty()){
           abort(404);
         } else {
-          return view('pages/events', ['name_event' => $eventName, 'events_data' => $eventPagesData]);
+          return view('pages/events', ['name_event' => $eventName, 'events_data' => $eventPagesData, 'timelines' => $timelines]);
         }
       }
-      return "event".$eventName;
     }
 
     public function news(){
       $news = DB::table('news')->get();
-      return view('pages/news', ['data' => $news]);
-      return "news";
+      return view('pages/news', ['news' => $news]);
     }
 
     public function seminar($seminarName){

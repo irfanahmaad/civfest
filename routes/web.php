@@ -17,7 +17,7 @@ Route::get('event/{name_event}', 'MainController@event');
 
 Route::get('seminar/{name_seminar}', 'MainController@seminar');
 
-Route::get('/news', 'MainController@news');
+Route::get('all-news', 'MainController@news');
 
 Route::get('galeri/{type_galeri}', function($type_galeri){
   return view('pages/'.$type_galeri);

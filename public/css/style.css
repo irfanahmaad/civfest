@@ -473,6 +473,10 @@ body {
 	left: -50px;
 }
 
+.opacity-5 {
+	opacity: 0.5;
+}
+
 .acc {
 	width: 400px;
 	bottom: 0;
@@ -795,6 +799,60 @@ body {
 }
 .speaker p {
   margin-top: 0;
+}
+
+.icon-register {
+	font-size: 35px;
+	margin: 20px;
+	padding: 30px;
+	background-color: #ececec;
+	border-radius: 100%;
+}
+.tombol{
+	outline: none;
+	color: #fff;
+	padding: 15px 40px;
+	border-radius: 7px;
+	border: none;
+	cursor: pointer;
+	transition: .3s ease;
+}
+.tombol-success{
+	background-color: #0a947b;
+	border-bottom: 5px solid #056957;
+}
+.tombol-success:hover{
+	background-color: #056957;
+	border-bottom: 5px solid #03463a;
+}
+
+.tombol-primary{
+	background-color: #00b0e4;
+	border-bottom: 5px solid #00779a;
+}
+.tombol-primary:hover {
+	background-color: #00779a;
+	border-bottom: 5px solid #005771;
+}
+
+.tombol-danger {
+	color: #000;
+	background-color: #fdff72;
+	border-bottom: 5px solid #dcde4b;
+}
+.tombol-danger:hover {
+	background-color: #dcde4b;
+	border-bottom: 5px solid #a1a22e;
+}
+.tombol:active{
+	transform: translateY(5px);
+	border-bottom: 0px solid #000;
+}
+
+.cek-status {
+	padding: 15px;
+	outline: none;
+	margin-right: 5px;
 }
 
 @media(max-width: 768px){
