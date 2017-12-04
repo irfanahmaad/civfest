@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2017 at 09:34 AM
+-- Generation Time: Dec 02, 2017 at 03:26 AM
 -- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -67,28 +67,6 @@ INSERT INTO `events` (`id`, `title`, `sub_title`, `description`, `images`, `link
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galleries`
---
-
-CREATE TABLE `galleries` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `images` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `galleries`
---
-
-INSERT INTO `galleries` (`id`, `title`, `images`, `created_at`, `updated_at`) VALUES
-(11, 'Lomba Konstruksi Jembatan', '_DSC7524_.jpg', '2017-12-04 07:55:41', '2017-12-04 07:55:41'),
-(12, 'Penyerahan piagam', 'IMG_3704_.jpg', '2017-12-04 08:26:50', '2017-12-04 08:26:50');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `migrations`
 --
 
@@ -110,10 +88,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (74, '2017_11_27_033848_create_timelines_table', 1),
 (75, '2017_11_27_034008_create_seminars_table', 1),
 (76, '2017_11_27_035104_create_speakers_table', 1),
-(77, '2017_11_27_153045_create_abouts_table', 2),
-(78, '2017_12_01_165945_create_galleries_table', 3),
-(79, '2017_12_03_111343_update_galleries_table', 3),
-(83, '2017_12_03_112520_update_galleries_table', 4);
+(77, '2017_11_27_153045_create_abouts_table', 2);
 
 -- --------------------------------------------------------
 
@@ -266,7 +241,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Administrator', 'admin@civilfestival-pnj.com', '$2y$10$DxyS0Dgi0U1xYp3IWgi3kunPA7JH8IipbmDTgEBLCV6ipmdTS9nS.', '96GNFZdFmmquvjp0LGJGuRjgLLVd8Fhkjpdfstzmv0utcB4YhQKkN0RmIb4V', '2017-11-26 23:37:58', '2017-11-26 23:37:58');
+(1, 'Administrator', 'admin@civilfestival-pnj.com', '$2y$10$DxyS0Dgi0U1xYp3IWgi3kunPA7JH8IipbmDTgEBLCV6ipmdTS9nS.', 'oGOXKVhZG7r793jxCxRfhe2qV9q145FtYDGFQZyF3ACLC7dzCqAlwqojpiv6', '2017-11-26 23:37:58', '2017-11-26 23:37:58');
 
 --
 -- Indexes for dumped tables
@@ -282,12 +257,6 @@ ALTER TABLE `abouts`
 -- Indexes for table `events`
 --
 ALTER TABLE `events`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `galleries`
---
-ALTER TABLE `galleries`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -350,16 +319,10 @@ ALTER TABLE `events`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `galleries`
---
-ALTER TABLE `galleries`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT for table `news`

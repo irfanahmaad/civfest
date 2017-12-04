@@ -25,9 +25,7 @@ Route::get('ultramen', function(){
   return view('pages/ultramen');
 });
 
-Route::get('galeri/{type_galeri}', function($type_galeri){
-  return view('pages/'.$type_galeri);
-});
+Route::get('galeri/{type_galeri}', 'MainController@galleries');
 
 Route::get('contact', function(){
     return view('pages/contact');

@@ -28,7 +28,7 @@
           <div class="inner">
             <h3>{{ $galleries->count() }}</h3>
 
-            <p>News count</p>
+            <p>Image count</p>
           </div>
           <div class="icon">
             <i class="fa fa-calendar"></i>
@@ -41,51 +41,31 @@
             <h3 class="box-title">Galleries</h3>
           </div>
           <!-- /.box-header -->
-          <div class="box-body">
-            <table id="example1" class="table table-bordered table-striped">
-              <thead>
-              <tr>
-                <th>No</th>
-                <th>Title</th>
-                <th>Images</th>
-                <th>Action</th>
-              </tr>
-              </thead>
-              <tbody>
-              @foreach ($galleries as $data)
-              <tr>
-                <td>{{ ++$loop->index }}</td>
-                <td>{{ $data->title }}</td>
-                <td><img src="{{ asset('img/galleries/'.$data->images) }}" width="50%" align="center"></td>
-                <td>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-danger btn-flat">Action</button>
-                    <button type="button" class="btn btn-danger btn-flat dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="{{ url('galleries/'.$data->id.'/edit') }}">Manage</a></li>
-                      <li>
-                        <!-- <a href="{{ url('news/destroy/'.$data->id) }}">Drop post</a> -->
-                        <a href="{{ url('galleries/'.$data->id) }}"
-                            onclick="event.preventDefault();
-                                     document.getElementById('delete-form-galleries-{{$data->id}}').submit();">
-                          <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
-                          <span class="hidden-xs">Drop post</span>
-                        </a>
-                        <form id="delete-form-galleries-{{$data->id}}" method="post" action="{{ url('galleries/'.$data->id) }}" style="display: none;">
-                            {{ Form::hidden('_method', 'DELETE') }}
-                            {{ csrf_field() }}
-                        </form>
-                      </li>
-                    </ul>
+          <!-- body -->
+          <div class="container-fluid">
+            <div class="row">
+              @foreach($galleries as $data)
+              <div class="col-md-3 text-center">
+                <label>{{ $data->title }}</label>
+                <img src="{{ asset('img/galleries/'.$data->images) }}" width="50%" align="center">
+                <div style="margin:10px;">
+                  <div class="btn btn-danger btn-flat">
+                    <!-- <a href="{{ url('news/destroy/'.$data->id) }}">Drop post</a> -->
+                    <a style="text-decoration:none; color:#fff;" href="{{ url('galleries/'.$data->id) }}"
+                        onclick="event.preventDefault();
+                                 document.getElementById('delete-form-galleries-{{$data->id}}').submit();">
+                      <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
+                      <span>Drop post</span>
+                    </a>
+                    <form id="delete-form-galleries-{{$data->id}}" method="post" action="{{ url('galleries/'.$data->id) }}" style="display: none;">
+                        {{ Form::hidden('_method', 'DELETE') }}
+                        {{ csrf_field() }}
+                    </form>
                   </div>
-                </td>
-              </tr>
+                </div>
+              </div>
               @endforeach
-              </tbody>
-            </table>
+            </div>
           </div>
           <!-- /.box-body -->
         </div>

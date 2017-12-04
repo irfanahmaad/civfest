@@ -40,6 +40,11 @@ class MainController extends Controller
       return view('pages/news', ['news' => $news]);
     }
 
+    public function galleries(){
+      $galleries = DB::table('galleries')->get();
+      return view('pages/photo',['galleries' => $galleries]);
+    }
+
     public function newsDetail($parameter){
       $parameter = strtolower(str_replace('-', ' ', $parameter));
       $newsDetail = DB::table('news')->where('title', $parameter)->get();

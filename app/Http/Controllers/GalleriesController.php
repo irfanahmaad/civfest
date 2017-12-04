@@ -90,16 +90,6 @@ class GalleriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        $parse = [
-            'title' => 'Manage post'
-        ];
-
-        $getGalleriesData = DB::table('galleries')->where('id', $id)->get();
-
-        return view('admin_pages/galleries/edit', ['parse' => $parse, 'data' => $getGalleriesData]);
-    }
 
     /**
      * Update the specified resource in storage.
@@ -108,37 +98,6 @@ class GalleriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        if($request->images == NULL){
-          $data = [
-            "title" => $request->title,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-          ];
-
-          $request->session()->flash('status', 'Task was successful!');
-          DB::table('galleries')->where('id', $id)->update($data);
-          return redirect('galleries/'.$id.'/edit');
-        } else {
-          $images = "";
-          if($request->hasFile("images")){
-            $request->images->move("img/galleries", $request->images->getClientOriginalName());
-            $images = $request->images->getClientOriginalName();
-          }
-
-          $data = [
-            "title" => $request->title,
-            "images" => $images,
-            "created_at" => Carbon::now()->toDateTimeString(),
-            "updated_at" => Carbon::now()->toDateTimeString()
-          ];
-
-          $request->session()->flash('status', 'Task was successful!');
-          DB::table('galleries')->where('id', $id)->update($data);
-          return redirect('galleries/'.$id.'/edit');
-        }
-    }
 
     /**
      * Remove the specified resource from storage.
