@@ -49,7 +49,7 @@
                 <label>{{ $data->title }}</label>
                 <img src="{{ asset('img/galleries/'.$data->images) }}" width="50%" align="center">
                 <div style="margin:10px;">
-                  <div class="btn btn-danger btn-flat">
+                  <div class="btn btn-danger btn-flat btn-xs">
                     <!-- <a href="{{ url('news/destroy/'.$data->id) }}">Drop post</a> -->
                     <a style="text-decoration:none; color:#fff;" href="{{ url('galleries/'.$data->id) }}"
                         onclick="event.preventDefault();
