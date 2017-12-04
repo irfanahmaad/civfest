@@ -39,10 +39,6 @@
 
             <img src="{{ asset('img/news/'.$data[0]->images) }}" alt="manage-new-images" />
           </div>
-          <div class="form-group">
-            <textarea class="textarea" id="editor1" name="description" placeholder="Place some text here"
-                      style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required>{{ $data[0]->description }}</textarea>
-          </div>
         </div>
         <!-- /.box-body -->
         <div class="box-footer">

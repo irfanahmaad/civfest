@@ -26,19 +26,18 @@
       <form role="form" class="form" method="post" action="{{ url('galleries') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="box-body">
-          <!-- <div class="form-group">
+          <!-- input title -->
+          <div class="form-group">
             <label for="title">Title post</label>
             <input type="text" name="title" class="form-control" id="title" placeholder="Enter title" required>
-          </div> -->
+          </div>
+
+          <!-- input images -->
           <div class="form-group">
             <label for="inputFile">Your Images</label>
             <input type="file" name="images" id="inputFile" required>
 
             <p class="help-block" style="font-style: italic;color: red;">this images must 1 x 1</p>
-          </div>
-          <div class="form-group">
-            <textarea class="textarea" name="description" placeholder="Place some text here"
-                      style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required></textarea>
           </div>
         </div>
         <!-- /.box-body -->

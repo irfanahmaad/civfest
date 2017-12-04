@@ -95,6 +95,11 @@
             <i class="fa fa-users"></i> <span>Seminars</span>
           </a>
         </li>
+        <li class="{{ (\Request::route()->getName() == 'galleries') ? 'active' : ''}}">
+          <a href="{{ url('galleries') }}">
+            <i class="fa fa-picture-o"></i> <span>Galleries</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

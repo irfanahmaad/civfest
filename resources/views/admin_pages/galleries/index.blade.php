@@ -46,8 +46,8 @@
               <thead>
               <tr>
                 <th>No</th>
+                <th>Title</th>
                 <th>Images</th>
-                <th>Description</th>
                 <th>Action</th>
               </tr>
               </thead>
@@ -55,8 +55,8 @@
               @foreach ($galleries as $data)
               <tr>
                 <td>{{ ++$loop->index }}</td>
+                <td>{{ $data->title }}</td>
                 <td><img src="{{ asset('img/galleries/'.$data->images) }}" width="50%" align="center"></td>
-                <td>{{$data->description}}</td>
                 <td>
                   <div class="btn-group">
                     <button type="button" class="btn btn-danger btn-flat">Action</button>

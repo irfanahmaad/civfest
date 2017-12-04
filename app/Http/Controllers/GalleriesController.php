@@ -62,7 +62,7 @@ class GalleriesController extends Controller
         }
 
         $data = [
-            "description" => $request->description,
+            "title" => $request->title,
             "images" => $images,
             "created_at" => Carbon::now()->toDateTimeString(),
             "updated_at" => Carbon::now()->toDateTimeString()
@@ -81,7 +81,7 @@ class GalleriesController extends Controller
      */
     public function show($id)
     {
-        
+
     }
 
     /**
@@ -112,7 +112,7 @@ class GalleriesController extends Controller
     {
         if($request->images == NULL){
           $data = [
-            "description" => $request->description,
+            "title" => $request->title,
             "created_at" => Carbon::now()->toDateTimeString(),
             "updated_at" => Carbon::now()->toDateTimeString()
           ];
@@ -128,7 +128,7 @@ class GalleriesController extends Controller
           }
 
           $data = [
-            "description" => $request->description,
+            "title" => $request->title,
             "images" => $images,
             "created_at" => Carbon::now()->toDateTimeString(),
             "updated_at" => Carbon::now()->toDateTimeString()
