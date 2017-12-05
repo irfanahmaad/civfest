@@ -47,15 +47,15 @@
               @foreach($galleries as $data)
               <div class="col-md-3 text-center">
                 <label>{{ $data->title }}</label>
-                <img src="{{ asset('img/galleries/'.$data->images) }}" width="50%" align="center">
-                <div style="margin:10px;">
+                <img src="{{ asset('img/galleries/'.$data->images) }}" class="img-responsive" align="center">
+                <div style="padding:10px;">
                   <div class="btn btn-danger btn-flat btn-xs">
                     <!-- <a href="{{ url('news/destroy/'.$data->id) }}">Drop post</a> -->
                     <a style="text-decoration:none; color:#fff;" href="{{ url('galleries/'.$data->id) }}"
                         onclick="event.preventDefault();
                                  document.getElementById('delete-form-galleries-{{$data->id}}').submit();">
                       <!-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> -->
-                      <span>Drop post</span>
+                      <span>Drop image</span>
                     </a>
                     <form id="delete-form-galleries-{{$data->id}}" method="post" action="{{ url('galleries/'.$data->id) }}" style="display: none;">
                         {{ Form::hidden('_method', 'DELETE') }}

@@ -32,27 +32,9 @@
             <img src="{{ asset('img/galleries/'.$data->images) }}" alt="" title="{{ $data->title }}" />
           </a>
           @endforeach
-          <!-- <a href="{{ asset('img/galleries/DSC_4397_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/DSC_4397_.jpg') }}" alt="" title="Beautiful Image" />
-          </a>
-          <a href="{{ asset('img/galleries/IMG_3668_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/IMG_3668_.jpg') }}" alt="" title="Beautiful Image" />
-          </a>
-          <a href="{{ asset('img/galleries/IMG_4028_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/IMG_4028_.jpg') }}" alt="" title="Beautiful Image" />
-          </a>
-          <a href="{{ asset('img/galleries/IMG_3704_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/IMG_3704_.jpg') }}" alt="" title="Beautiful Image" />
-          </a>
-          <a href="{{ asset('img/galleries/IMG_4301_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/IMG_4301_.jpg') }}" alt="" title="Beautiful Image" />
-          </a>
-          <a href="{{ asset('img/galleries/IMG_4437_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/IMG_4437_.jpg') }}" alt="" title="Beautiful Image" />
-          </a>
-          <a href="{{ asset('img/galleries/IMG_4513_.jpg') }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/IMG_4513_.jpg') }}" alt="" title="Beautiful Image" />
-          </a> -->
+        </div>
+        <div class="col-xs-12">
+          {{ $galleries->links() }}
         </div>
       </div>
     </div>

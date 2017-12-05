@@ -16,7 +16,7 @@ class MainController extends Controller
 
     public function index(){
       $events = $this->repo->getDataEvent();
-      $news = DB::table('news')->get();
+      $news = DB::table('news')->paginate(4);
       $seminars = $this->repo->getDataSeminars();
       return view('home', ['events' => $events, 'news' => $news, 'seminars' => $seminars]);
     }
@@ -41,7 +41,7 @@ class MainController extends Controller
     }
 
     public function galleries(){
-      $galleries = DB::table('galleries')->get();
+      $galleries = DB::table('galleries')->paginate(8);
       return view('pages/photo',['galleries' => $galleries]);
     }
 

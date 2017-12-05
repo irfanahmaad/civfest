@@ -72,6 +72,7 @@
                     </div>
                   </a>
                   @endforeach
+                  {{ $news->links() }}
         				</div>
         			</div>
         		</div>
