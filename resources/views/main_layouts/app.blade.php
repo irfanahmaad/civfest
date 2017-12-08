@@ -74,6 +74,10 @@
     </nav>
   </div>
   @yield('content')
+  <section class="sponsor" style="padding: 40px 0px;">
+    <img src="{{ asset('img/medpart/media_partner.jpg') }}" alt="media partner" width="100%" />
+    <img src="{{ asset('img/sponsor/sponsor.jpg') }}" alt="media partner" width="100%" />
+  </section>
   <!-- <section class="sponsor">
     <div class="container-fluid">
       <div class="row">

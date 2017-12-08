@@ -107,7 +107,7 @@
         		</div>
         	</section>
 
-        	<section class="alur-lomba">
+          <section class="alur-lomba">
         		<img class="ornamen ornamen-right" src="{{ asset('img/acc/tropical-2.png') }}" height="550px">
         		<div class="container-fluid">
         			<div class="row">
@@ -119,37 +119,13 @@
         					<div class="event-content">
         						 <div id="alur-content">
                       @if (Request::segment(2) == 'lomba-beton-nasional')
-                      <ul class="alur">
-                        <li class="event" data-date="11 Nov 2017">
-                          <h3>Lomba Beton Nasional</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna</p>
-                        </li>
-                      </ul>
+                      <img src="{{ asset('img/alur/alur-beton.png') }}" alt="alur lomba beton" width="80%"/>
                       @elseif (Request::segment(2) == 'lomba-konstruksi-jembatan')
-                      <ul class="alur">
-                        <li class="event" data-date="11 Nov 2017">
-                          <h3>Lomba Konstruksi Jembatan</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna</p>
-                        </li>
-                      </ul>
+                      <img src="{{ asset('img/alur/alur-jembatan.png') }}" alt="alur lomba konstruksi jembatan" width="80%"/>
                       @elseif (Request::segment(2) == 'lomba-maket-gedung')
-                      <ul class="alur">
-                        <li class="event" data-date="11 Nov 2017">
-                          <h3>Lomba Maket Gedung</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna</p>
-                        </li>
-                      </ul>
+                      <img src="{{ asset('img/alur/alur-maket.png') }}" alt="alur lomba maket" width="80%"/>
                       @else
-                      <ul class="alur">
-                        <li class="event" data-date="11 Nov 2017">
-                          <h3>Lomba Desain K3L</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna</p>
-                        </li>
-                      </ul>
+                      <img src="{{ asset('img/alur/alur-desain.png') }}" alt="alur lomba desain" width="80%"/>
                       @endif
         						 </div>
         					</div>
