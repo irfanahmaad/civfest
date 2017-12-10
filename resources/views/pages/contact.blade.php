@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  </section>
+</section>
 
 <section class="breadcrumb-style">
   <div class="container-fluid">

@@ -81,5 +81,9 @@ Route::resource('galleries', 'GalleriesController', ['names' => [
     'edit' => 'galleries'
 ]]);
 
+Route::resource('registrations', 'RegistrationsController', ['names' => [
+  'index' => 'registrations'
+]]);
+
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

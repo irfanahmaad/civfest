@@ -100,6 +100,11 @@
             <i class="fa fa-picture-o"></i> <span>Galleries</span>
           </a>
         </li>
+        <li class="{{ (\Request::route()->getName() == 'registrations') ? 'active' : ''}}">
+          <a href="{{ url('registrations') }}">
+            <i class="fa fa-picture-o"></i> <span>Registrations</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->

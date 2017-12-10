@@ -14,10 +14,22 @@ class RegistrationsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+     protected $repo;
+     public function __construct(Repository $repository)
+     {
+       $this->middleware('auth');
+       $this->repo = $repository;
+     }
+
+     public function index()
+     {
+       $parse = [
+         'title' => 'Manage Seminars',
+         'no' => 1
+       ];
+       $registrations = DB::table('registrations')->get();
+       return view('admin_pages/registrations/index', ['parse' => $parse, 'registrations' => $registrations]);
+     }
 
     /**
      * Show the form for creating a new resource.
