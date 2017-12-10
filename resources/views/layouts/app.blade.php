@@ -100,11 +100,55 @@
             <i class="fa fa-picture-o"></i> <span>Galleries</span>
           </a>
         </li>
+<<<<<<< HEAD
         <li class="{{ (\Request::route()->getName() == 'registrations') ? 'active' : ''}}">
           <a href="{{ url('registrations') }}">
             <i class="fa fa-picture-o"></i> <span>Registrations</span>
           </a>
         </li>
+=======
+        <li class="{{ (\Request::route()->getName() == 'medpart') ? 'active' : ''}}">
+          <a href="{{ url('medpart') }}">
+            <i class="fa fa-users"></i> <span>Medpart</span>
+          </a>
+        </li>
+        <li class="{{ (\Request::route()->getName() == 'sponsors') ? 'active' : ''}}">
+          <a href="{{ url('sponsors') }}">
+            <i class="fa fa-handshake-o"></i> <span>Sponsors</span>
+          </a>
+        </li>
+        <li class="">
+          <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-list"></i>Alur Lomba <i class="fa fa-chevron-down" style="float:right;"></i>
+          </a>
+          <ul class="collapse sidebar-menu" id="collapseExample">
+            <li>
+              <a href="{{ url('alur-beton') }}">
+                <i class="fa fa-database"></i> <span>Lomba Beton Nasional</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="{{ url('alur-jembatan') }}">
+                <i class="fa fa-database"></i> <span>Lomba Konstruksi Jembatan</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="{{ url('alur-maket') }}">
+                <i class="fa fa-database"></i> <span>Lomba Maket Gedung</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="{{ url('alur-desain') }}">
+                <i class="fa fa-database"></i> <span>Lomba Desain K3L</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+>>>>>>> e0bee68f226273b96c9c60dce652364c569e3a03
       </ul>
     </section>
     <!-- /.sidebar -->
