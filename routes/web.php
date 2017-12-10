@@ -81,4 +81,39 @@ Route::resource('galleries', 'GalleriesController', ['names' => [
     'edit' => 'galleries'
 ]]);
 
+
+Route::resource('registrations', 'RegistrationsController', ['names' => [
+  'index' => 'registrations'
+]]);
+
+Route::resource('medpart', 'MedpartController', ['names' => [
+    'index' => 'medpart',
+    'create' => 'medpart'
+]]);
+
+Route::resource('sponsors', 'SponsorsController', ['names' => [
+    'index' => 'sponsors',
+    'create' => 'sponsors'
+]]);
+
+Route::resource('alur-beton', 'AlurBetonController', ['names' => [
+    'index' => 'alur-beton',
+    'create' => 'alur-beton'
+]]);
+
+Route::resource('alur-jembatan', 'AlurJembatanController', ['names' => [
+    'index' => 'alur-jembatan',
+    'create' => 'alur-jembatan'
+]]);
+
+Route::resource('alur-maket', 'AlurMaketController', ['names' => [
+    'index' => 'alur-maket',
+    'create' => 'alur-maket'
+]]);
+
+Route::resource('alur-desain', 'AlurDesainController', ['names' => [
+    'index' => 'alur-desain',
+    'create' => 'alur-desain'
+]]);
+
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
