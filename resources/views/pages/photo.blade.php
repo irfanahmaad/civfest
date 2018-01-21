@@ -28,8 +28,8 @@
       <div class="main-gallery">
         <div class="gallery">
           @foreach ($galleries as $data)
-          <a href="{{ asset('img/galleries/'.$data->images) }}" class="col-xs-12 col-md-6 col-lg-3">
-            <img src="{{ asset('img/galleries/'.$data->images) }}" alt="" title="{{ $data->title }}" />
+          <a href="{{ asset('img/galleries/'.$data->images) }}" class="col-xs-12 col-sm-6 col-md-4">
+            <img style="padding:10px;" src="{{ asset('img/galleries/'.$data->images) }}" alt="" title="{{ $data->title }}" />
           </a>
           @endforeach
         </div>

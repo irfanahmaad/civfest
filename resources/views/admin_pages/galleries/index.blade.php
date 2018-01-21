@@ -45,7 +45,7 @@
           <div class="container-fluid">
             <div class="row">
               @foreach($galleries as $data)
-              <div class="col-md-3 text-center">
+              <div class="col-md-4 text-center">
                 <label>{{ $data->title }}</label>
                 <img src="{{ asset('img/galleries/'.$data->images) }}" class="img-responsive" align="center">
                 <div style="padding:10px;">

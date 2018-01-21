@@ -41,7 +41,7 @@ class MainController extends Controller
     }
 
     public function galleries(){
-      $galleries = DB::table('galleries')->paginate(8);
+      $galleries = DB::table('galleries')->paginate(6);
       return view('pages/photo',['galleries' => $galleries]);
     }
 

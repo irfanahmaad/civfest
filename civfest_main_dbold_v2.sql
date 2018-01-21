@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2017 at 04:03 AM
+-- Generation Time: Dec 04, 2017 at 09:34 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -266,7 +266,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Administrator', 'admin@civilfestival-pnj.com', '$2y$10$DxyS0Dgi0U1xYp3IWgi3kunPA7JH8IipbmDTgEBLCV6ipmdTS9nS.', 'dSpKxmVs68xAyVEDQEFCi89OWn3rhe6yTEg0l8xrZaoIfjAyXE3sRllzyvz4', '2017-11-26 23:37:58', '2017-11-26 23:37:58');
+(1, 'Administrator', 'admin@civilfestival-pnj.com', '$2y$10$DxyS0Dgi0U1xYp3IWgi3kunPA7JH8IipbmDTgEBLCV6ipmdTS9nS.', '96GNFZdFmmquvjp0LGJGuRjgLLVd8Fhkjpdfstzmv0utcB4YhQKkN0RmIb4V', '2017-11-26 23:37:58', '2017-11-26 23:37:58');
 
 --
 -- Indexes for dumped tables
